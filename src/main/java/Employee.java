@@ -4,7 +4,6 @@ public class Employee {
     private double salary;
     private static int employeeID = 0;
 
-    //TODO skapa private variabler
     public Employee(String name, int age, double salary) {
         this.name = name;
         this.age = age;
