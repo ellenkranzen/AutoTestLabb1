@@ -45,4 +45,14 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public double raiseSalary(double raise) {
+        if(raise <= 0) {
+            return salary;
+        } else {
+            double newSalary = salary + (raise/100*salary);
+            setSalary(newSalary);
+            return getSalary();
+        }
+    }
 }

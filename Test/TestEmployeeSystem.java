@@ -30,4 +30,15 @@ public class TestEmployeeSystem {
         testObject.deleteEmployee(0);
         Assertions.assertTrue(testObject.getList().size() == 0);
     }
+
+    @Test
+    public void testRaiseSalaryAll() {
+        EmployeeSystem testObject = new EmployeeSystem();
+        testObject.addEmployee(new Employee("Jonna Hagberg", 34, 50000.00));
+        testObject.addEmployee(new Employee("Ellen Kranzén", 30, 70000.00));
+        testObject.raiseSalaryAll(5);
+
+    }
+
+
 }

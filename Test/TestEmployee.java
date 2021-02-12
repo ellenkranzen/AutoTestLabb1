@@ -54,4 +54,15 @@ public class TestEmployee {
         Assertions.assertEquals(expected, actual);
     }
 
+    // VG Uppgifter - Jonna
+
+    @Test
+    public void testRaiseSalary() {
+        Employee testObject = new Employee("Jonna Hagberg", 34, 40000.00);
+        testObject.raiseSalary(5);
+        double expected = 42000;
+        double actual = testObject.getSalary();
+        Assertions.assertEquals(expected,actual);
+    }
+
 }

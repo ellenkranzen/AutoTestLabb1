@@ -14,4 +14,23 @@ public class EmployeeSystem {
      public void deleteEmployee(int place) {
           employeeList.remove(place);
      }
+
+     public double raiseSalaryAll(double raise) {
+          int i = 0;
+          employeeList.get(i);
+          if(raise <= 0) {
+
+               for(i = 0; i >= 0; i++) {
+
+               }
+          }
+
+     }
 }
+
+/*
+     double newSalary = salary + (raise/100*salary);
+     setSalary(newSalary);
+            return getSalary();
+
+ */
