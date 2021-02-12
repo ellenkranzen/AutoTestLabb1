@@ -2,13 +2,15 @@ public class Employee {
     private String name;
     private int age;
     private double salary;
-    private static int employeeID = 0;
+    private static int noOfEmployees = 0;
+    private int employeeID;
 
     public Employee(String name, int age, double salary) {
         this.name = name;
         this.age = age;
         this.salary = salary;
-        employeeID++;
+        noOfEmployees++;
+        this.employeeID = noOfEmployees;
     }
 
     public Employee() {
