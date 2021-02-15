@@ -8,7 +8,7 @@ public class TestEmployee {
     @DisplayName("Testar konstruktorn för Employee")
     public void testEmployeeConstructor () {
         Employee testObject = new Employee("Jonna Hagberg", 34, 40000.00);
-        Employee testObject2 = new Employee("Jonna Hagberg", 34, 40000.00);
+        Employee testObject2 = new Employee("Ellen Kranzén", 30, 50000.00);
         String expectedName = "Jonna Hagberg";
         String actualName = testObject.getName();
         Assertions.assertEquals(expectedName, actualName);
@@ -54,15 +54,5 @@ public class TestEmployee {
         Assertions.assertEquals(expected, actual);
     }
 
-    // VG Uppgifter - Jonna
-
-    @Test
-    public void testRaiseSalary() {
-        Employee testObject = new Employee("Jonna Hagberg", 34, 40000.00);
-        testObject.raiseSalary(5);
-        double expected = 42000;
-        double actual = testObject.getSalary();
-        Assertions.assertEquals(expected,actual);
-    }
 
 }

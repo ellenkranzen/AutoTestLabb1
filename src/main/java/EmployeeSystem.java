@@ -15,22 +15,24 @@ public class EmployeeSystem {
           employeeList.remove(place);
      }
 
-     public double raiseSalaryAll(double raise) {
-          int i = 0;
-          employeeList.get(i);
-          if(raise <= 0) {
-
-               for(i = 0; i >= 0; i++) {
-
+     public void raiseSalaryAll(double raise) {
+          ArrayList<Employee> list = getList();
+          if(raise > 0 && raise < 100) {
+               for(int i = 0; i < list.size(); i++) {
+                    double employeeSalary = list.get(i).getSalary();
+                    double newSalary = employeeSalary + (raise/100*employeeSalary);
+                    list.get(i).setSalary(newSalary);
                }
           }
+     }
 
+     public void raiseSalaryEmployee(int empID, double raise) {
+          ArrayList<Employee> list = getList();
+          if(raise > 0 && raise < 100) {
+               for(int i = 0; i < list.size(); i++) {
+                    empID = list.get(i).getEmployeeID();
+                    raiseSalaryAll(raise);
+               }
+          }
      }
 }
-
-/*
-     double newSalary = salary + (raise/100*salary);
-     setSalary(newSalary);
-            return getSalary();
-
- */

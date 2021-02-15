@@ -46,7 +46,7 @@ public class Employee {
         this.salary = salary;
     }
 
-    public double raiseSalary(double raise) {
+    /*public double raiseSalary(double raise) {
         if(raise <= 0) {
             return salary;
         } else {
@@ -54,5 +54,5 @@ public class Employee {
             setSalary(newSalary);
             return getSalary();
         }
-    }
+    }*/
 }
